@@ -24,10 +24,23 @@
 // ПОРАХУЙТЕ СУМУ ТОВАРІВ У КОРЗИНІ . ПОТРІБНО ВВЕСТИ СУМУ 3-Х ТОВАРІВ І ПОРАХУВАТИ ЇХ СУМУ
 
 
-const mobile = Number(prompt("Введіть ціну телефона"));
-const simCard = Number(prompt("Введіть ціну sim-картки"));
-const caseMobile = +prompt("Введіть ціну чохла на телефон");
-let sum = mobile + simCard + caseMobile;
+// const mobile = Number(prompt("Введіть ціну телефона"));
+// const simCard = Number(prompt("Введіть ціну sim-картки"));
+// const caseMobile = +prompt("Введіть ціну чохла на телефон");
+// let sum = mobile + simCard + caseMobile;
 
-console.log(sum);
-alert(sum);
+// console.log(sum);
+// alert(sum);
+
+// ЗАДАЧА 4
+// ВИКОРИСТОВУЮЧИ КОНСТРУКЦІЮ IF...ELSE , НАПИШИ КОД, ЯКИЙ БУДЕ ЗАПИТУВАТИ:
+// "СКІЛЬКИ МІСЯЦІВ МАЄ РІК", ЯКЩО КОРИСТУВАЧ ВВОДИТЬ 12 ТО У КОНСОЛІ ПИШЕ ВІРНО, ЯКЩО НЕ ПРАВИЛЬНО КОРИСТУВАЧ ВВІВ, ТОДІ У КОНСОЛІ ПИШЕ
+// "НЕ ЗНАЄТЕ? 12"
+
+const month = Number(prompt("СКІЛЬКИ МІСЯЦІВ МАЄ РІК?"));
+
+
+const message = month === 12 ? "ВІРНО" : "НЕ ЗНАЄТЕ? 12";
+
+console.log(message);
+alert(message);
