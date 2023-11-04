@@ -109,9 +109,62 @@
 // ЗАДАЧА 6
 // Напишіть ф-цію greet(name) , яка при виклику буде получати імя (як приклад , "Василь"), і логінувати рядок "Привіт, <імя>".У випадку , відсутнього
 // відсутнього значення, виводе аргумент "Привіт , гість"
-console.log(greet("Василь")); //Привіт Василь
-console.log(greet()); //Привіт гість
+// console.log(greet("Василь")); //Привіт Василь
+// console.log(greet()); //Привіт гість
 
-function greet(name = "гість") {
-  return `Привіт, ${name}`;
-}
+// function greet(name = "гість") {
+//   return `Привіт, ${name}`;
+// }
+
+// ЗАДАЧА 7
+// Напишіть ф-цію capitalize , яка буде приймати рядок і буде повертати новий рядок , де кожне слово буде з великої букви
+// capitalize('the quick brown fox')// 'The Quick Brown Fox '
+
+// function capitalize(string = "") {
+//   const split = string.split(" ");
+
+//   const words = [];
+
+//   for (const element of split) {
+//     const firstLater = element[0].toUpperCase();
+//     const string = element.slice(1);
+//     const finalString = `${firstLater}${string}`;
+//     words.push(finalString);
+//   }
+//   return words.join(" ");
+// }
+
+// console.log(capitalize("the quick brown fox"));
+
+// ЗАДАЧА 8
+// Виконайте рефакторинг замінивши обявлення ф-ції з function declaration на function expression // function checkNumbers(a, b) {
+//   if (a > b) {
+//     return `число ${a} більше ${b}`;
+//   }
+
+//   return `число ${b} більше ${a}`;
+// }
+
+// const checkNumbers = function (a, b) {
+//   const numbers = a > b ? `число ${a} більше ${b}` : `число ${b} більше ${a}`;
+//   return numbers;
+// };
+
+// const checkNumbers = (a, b) => (a > b ? `число ${a} більше ${b}` : `число ${b} більше ${a}`);
+
+// console.log(checkNumbers(1, 2));
+
+// ЗАДАЧА 9
+// Напишіть функцію для роботи з колекцією навчаючих курсів courses:
+
+// addCourse(name) - добавляє курс у кінець колекції
+// removeCourse(name) - видаляє курс із колекції
+// updateCourse(oldName, newName)- змінює імя на нове
+// const courses = ["HTML", "CSS", "JavaScript", "React", "PostgreSQL"];
+
+// addCourse("Express"); // ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL', 'Express']
+// addCourse("CSS"); // 'У вас уже є такий курс'
+// removeCourse("React"); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'Express']
+// removeCourse("Vue"); // 'Курс з таким іменем не найдено'
+// updateCourse("Express", "NestJS"); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
+console.log(courses);
