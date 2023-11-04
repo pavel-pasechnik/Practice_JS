@@ -4,5 +4,6 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "cSpell.language": "en, ru, uk"
+  "cSpell.language": "en, ru, uk",
+  "liveServer.settings.port": 5501
 }
