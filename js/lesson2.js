@@ -29,6 +29,20 @@
 // styles.unshift("Рэп", "Регги");
 // console.log(styles);
 
+// const styles = ["Джаз", "Блюз"];
+
+// styles.push("Рок-н-ролл");
+// console.log(styles);
+
+// styles.splice(1, 1, "Классика");
+// console.log(styles);
+
+// const deLete = styles.shift();
+// console.log(deLete);
+
+// styles.unshift("Рэп", "Регги");
+// console.log(styles);
+
 // ЗАДАЧА 2
 // Напишіть ф-цію logItems(array) , яка буде получати масив і використовуючи цикл for , який для кожного елемента масива буде виводити в консоль
 // повідомлення у форматі <індекс елемента> та <значення елемента>.
@@ -49,8 +63,6 @@
 // 1) напишіть циклом for
 //  2) перепишіть функцією
 
-  
- 
 // function findSmallestNumber(numbers) {
 //   let smallNumber = numbers[0];
 
@@ -62,15 +74,11 @@
 //   return smallNumber
 //   }
 
-
-
 // console.log(findSmallestNumber([2, 17, 94, 1, 23, 37]));
 // console.log(findSmallestNumber([49, 4, 83, 7, 12]));
 
-
 // ЗАДАЧА 4
 //  Провірте , чи являється рядок полідромом
-
 
 // const str = "ротатор";//true
 // const newString = "Hello";//false
@@ -80,3 +88,30 @@
 
 // const secondStr = newString.split("").reverse().join("");
 // console.log(newString === secondStr);
+
+// ЗАДАЧА 5
+// Напишіть ф-цію calculateAverage() яка приймає довільну кількість аргументів і повертає їх середнє значення .Всі аргументи будуть тільки числовими
+
+// function calculateAverage() {
+//   console.log(arguments);
+//   const numbers = Array.from(arguments);
+//   console.log(numbers);
+//   let sum = 0;
+//   for (const number of numbers) {
+//     sum += number;
+//   }
+//   return sum / numbers.length;
+// }
+// console.log(calculateAverage(1, 2, 3, 4)); // 2.5
+// console.log(calculateAverage(14, 8, 2)); // 8
+// console.log(calculateAverage(27, 43, 2, 8, 36)); // 23.2
+
+// ЗАДАЧА 6
+// Напишіть ф-цію greet(name) , яка при виклику буде получати імя (як приклад , "Василь"), і логінувати рядок "Привіт, <імя>".У випадку , відсутнього
+// відсутнього значення, виводе аргумент "Привіт , гість"
+console.log(greet("Василь")); //Привіт Василь
+console.log(greet()); //Привіт гість
+
+function greet(name = "гість") {
+  return `Привіт, ${name}`;
+}
