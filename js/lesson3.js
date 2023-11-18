@@ -126,6 +126,16 @@ const scientists = [
 
 // 1)получити масив вчених які народились у 19ст;
 
-const born19Centenary = scientists.filter(({ born }) => born >= 1800 && born < 1900);
+// const born19Centenary = scientists.filter(({ born }) => born >= 1800 && born < 1900);
 
-console.log(born19Centenary);
+// console.log(born19Centenary);
+
+// 2)порахувати загальну суму років скільки прожили вчені , і визначити середнє значення;
+
+// let year = scientists.reduce((acc, number) => acc + (number.dead - number.born), 0);
+// console.log(year / scientists.length);
+
+// 3) відсортувати за алфавітом;
+
+const nameAlfabet = [...scientists].sort((a, b) => (a.name[0] > b.name[0] ? -1 : 1));
+console.log(nameAlfabet);
